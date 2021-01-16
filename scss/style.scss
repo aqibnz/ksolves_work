@@ -209,27 +209,34 @@ button {
     color: #6a6868;
     background: none;
     @include center();
-    transition: ease-in-out 0.2s;
+    transition: 0.3s ease-out;
+    background: linear-gradient(to left, transparent 50%, #222121 50%) right;
+    background-size: 200%;
     &.red {
       color: $red;
       border-color: $red;
+      background: linear-gradient(to left, transparent 50%, $red 50%) right;
+      background-size: 200%;
       svg {
         stroke: $red;
       }
       &:hover {
-        background: $red;
+        // background: $red;
         border-color: $red;
+        // background-position: left;
       }
     }
     svg {
       stroke: #6a6868;
       margin-left: 12px;
       flex-shrink: 0;
+      transition: 0.3s ease-out;
     }
     &:hover {
-      background: #222121;
+      // background: #222121;
       color: $white;
       border-color: #222121;
+      background-position: left;
       svg {
         stroke: $white;
       }
@@ -502,6 +509,7 @@ button {
           margin: 0 auto;
           transition: all 0.2s;
           text-transform: uppercase;
+          line-height: 43px;
           &:hover {
             background: $red;
             border-color: $red;
