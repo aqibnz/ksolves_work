@@ -1393,6 +1393,9 @@ button {
   font-weight: 300;
   line-height: 36px;
 }
+.wrapper footer .footer_content .cl ul li a:hover {
+  color: #ff6363;
+}
 .wrapper footer .footer_content .cl .icons {
   display: flex;
   align-items: center;
@@ -1515,6 +1518,7 @@ button {
     width: 130px;
     height: 36px;
     font-size: 0.875em;
+    line-height: 34px;
   }
   .wrapper .all_brands ul li a img {
     height: 294px;
